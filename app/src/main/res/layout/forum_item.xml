@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="234dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAuthor"
+        android:layout_width="314dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="317dp"
+        android:layout_marginRight="317dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="371dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:maxLength="200"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAuthor" />
+
+    <TextView
+        android:id="@+id/textViewLikes"
+        android:layout_width="78dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+    <TextView
+        android:id="@+id/textViewDateTime"
+        android:layout_width="117dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/textViewLikes"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription" />
+
+    <ImageView
+        android:id="@+id/imageViewLike"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toEndOf="@+id/imageViewTrash"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+        app:srcCompat="@drawable/like_not_favorite" />
+
+    <ImageView
+        android:id="@+id/imageViewTrash"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewLike"
+        app:layout_constraintStart_toEndOf="@+id/textViewDateTime"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription"
+        app:srcCompat="@drawable/rubbish_bin" />
+</androidx.constraintlayout.widget.ConstraintLayout>
